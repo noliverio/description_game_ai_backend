@@ -4,13 +4,19 @@ Flask based backend for AI Description game.
 
 ## Config
 
-Add config to config.json
+Set the following env vars to configure the application.
 
-|  config key name | description |
-|----------------- | ----------------------|
-|  open_ai_api_key |  api key for open ai  |
-|  PROJECT_ID      | name of the GPC project with your storage bucket
-|  BUCKET_NAME     | name of the GCP storage bucket
+|  config key name | description                                                             |
+|----------------- | ------------------------------------------------------------------------|
+|  open_ai_api_key | api key for open ai (should be managed with secret manager)             |
+|  PROJECT_ID      | name of the GPC project with your storage bucket                        |
+|  BUCKET_NAME     | name of the GCP storage bucket                                          |
+|  DB_USER         | username to query your database                                         |
+|  DB_PASS         | password to query your database (should be managed with secret manager) |
+|  DB_NAME         | name of your database                                                   |
+|  CONNECTION_NAME | connection string                                                       |
+|
+
 
 ## Infra
 
